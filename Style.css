@@ -1,0 +1,119 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  margin:0;
+  padding:0;
+  background:#0f172a;
+  color:white;
+}
+
+a {
+  text-decoration:none;
+  color:white;
+}
+
+header {
+  background:#020617;
+  padding:20px 40px;
+}
+
+header nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header nav ul {
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+header nav ul li a:hover {
+  color:#3b82f6;
+}
+
+/* Hero */
+.hero {
+  text-align:center;
+  padding:120px 20px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.hero .btn {
+  background:#3b82f6;
+  padding:15px 30px;
+  border-radius:8px;
+  display:inline-block;
+  margin-top:20px;
+  font-weight:bold;
+}
+
+.hero .btn:hover {
+  background:#2563eb;
+}
+
+/* Sections */
+.section-title {
+  text-align:center;
+  font-size:2em;
+  margin-bottom:40px;
+}
+
+.services-grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+  padding:0 20px 60px;
+}
+
+.card {
+  background:#1e293b;
+  padding:30px;
+  border-radius:12px;
+  width:250px;
+  text-align:center;
+  transition:transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform:translateY(-10px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Contact */
+#contact {
+  text-align:center;
+  padding:80px 20px;
+}
+
+#contact .btn.whatsapp {
+  background:#25d366;
+}
+
+#contact .btn.whatsapp:hover {
+  background:#1ebe5b;
+}
+
+/* Footer */
+footer {
+  text-align:center;
+  padding:30px;
+  background:#020617;
+  font-size:0.9em;
+  color:#888;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .services-grid {
+    flex-direction:column;
+    align-items:center;
+  }
+
+  header nav ul {
+    flex-direction:column;
+    gap:10px;
+  }
+}
